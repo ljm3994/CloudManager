@@ -1,0 +1,19 @@
+ExchangeCodeForTokenAsync(string userId, string code, string redirectUri,
+            CancellationToken taskCancellationToken)  --> 코드를 토큰으로 교환하는 함수(클라이언트 id, 얻어온 코드, 반화되는 uri, 작업이 취소되지 않아야 함을 나타내는 값)
+            구글 api 로그인하여 토큰 얻어오는 과정
+            public static async Task<UserCredential> AuthorizeAsync(ClientSecrets clientSecrets,
+            IEnumerable<string> scopes, string user, CancellationToken taskCancellationToken,
+            IDataStore dataStore = null) --> 처음 실행되는 함수(ClientScerets라는 클래스는 개발자의 id와 비밀번호를 저장하는 클래스, 접근권한 설정, 유저이름 설정, 작업이 취소되지 않아야 함을 나타내는 값, 저장 장소)
+            {
+             넘겨주기 위한 초기값 설정 (받아온 클라이언트의 아이디와 비밀번호 설정)
+            }
+           private static async Task<UserCredential> AuthorizeAsyncCore(
+            GoogleAuthorizationCodeFlow.Initializer initializer, IEnumerable<string> scopes, string user,
+            CancellationToken taskCancellationToken, IDataStore dataStore = null) --> 두번쨰 실행되는 함수 ( GoogleAuthorizationCodeFlow.Initializer = 클라이언트의 아이디와 비밀번호가 담겨져 있으며 각종 설정들(저장장소, 접근 권한등이 담겨져 있는 클래스))
+            AuthorizationCodeInstalledApp --> 설치된 앱에서 토큰을 얻어와주는 클래스
+            public async Task<UserCredential> AuthorizeAsync(string userId, CancellationToken taskCancellationToken) --> 먼저 코드를 얻어와 주고 코드에서 토큰 까지 얻어와주는 함수
+             await DataStore.StoreAsync<TokenResponse>(userId, token).ConfigureAwait(false) --> 토큰과 유저 id를 로컬에 저장해주는 함수
+             Flow.CreateAuthorizationCodeRequest(redirectUri); --> 코드를 얻어오는 함수
+             ParameterUtils이라는 클래스를 통해서 서버로 보낼 쿼리문을 작성하기 쉽게 해준다.
+             토큰을 얻기위해 ConfigurableMessageHandler.SendAsync 함수를 통해 서버 연결을 확인한다. 서버에 연결이 잘되었는지 확인하고
+             response으로 ok라는 메시지가 날라오면 그제서야 서버에서 토큰을 가지고 온다.(서버애 연결이 제대로 되지 않으면 프로그램으로 에러메시지가 전송되어 온다. 만약 사용자가 인터넷 연결을 하지 않은채 프로그램을 사용하려한다면 이것을 이용해서 예외처리를 할수 있을듯 싶다)

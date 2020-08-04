@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="googlecloud1.CloudeSelect" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAEAAAAECAABAAAAACAABCCAIAAAAAAAQAAAAgEAAA=</HashCode>
+      <FileName>CloudeSelect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.CreateFolder" Collapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAEEAAAACCAABAIAACAAACCAAEAAAAABAAAAAFAAgA=</HashCode>
+      <FileName>CreateFolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.DriveInfo" Collapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhEIEAAFAAAACAAkIAAAAAkAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DriveInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.DriveInfoForm" Collapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASQAAAAADAAAhAAAACAAAGCAAAAAAAAgAAAIAQABAA=</HashCode>
+      <FileName>DriveInfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.FileIcon" Collapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ApAAZAABAACAAFAgBAAABAAAAATAEEAAAQAUYAgACAA=</HashCode>
+      <FileName>FileIcon.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.FileInfoForm" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAACAAAJAAAACAAAACACAAAAAABAEAAAQAgIA=</HashCode>
+      <FileName>FileInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.HttpHelper" Collapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADAAAAAAAAAAAAAAAAAEAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>HttpHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.LoadFolder" Collapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAiIAAAEBAAAAAAAAAAAAAAAAIIFAIACABgA=</HashCode>
+      <FileName>LoadFolder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.main" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4UBHaosAELExSlCPEkHrA86awSdSNG0pEcAAHUAPmIU=</HashCode>
+      <FileName>main.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.Program" Collapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.Setting" Collapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="googlecloud1.Setting.SafeLoadComplete" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Setting.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AgEAAAGgACGAgBAAAJGAAAACAEA4AAAAEHVAIAAAEBA=</HashCode>
+      <FileName>Setting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.Files.DropBoxFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEBAAAAAAAEAAAQAAAAAAQAAAIAAAA=</HashCode>
+      <FileName>File\DropBoxFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="googlecloud1.Files.FileInfo" Collapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgCAJEFAAAAAEAAACAAQIAAAAAIAJAAAA=</HashCode>
+      <FileName>File\FileInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.Files.GoogleFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEBAAQAAAAEAAAQAAAAAAQAAAIAAAA=</HashCode>
+      <FileName>File\GoogleFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="googlecloud1.Files.OneDriveFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEBAAAAAAAEAAAQAAAAAAQAAAIAAAA=</HashCode>
+      <FileName>File\OneDriveFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="googlecloud1.FileUpDown.FileDownload" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAAAgAAAAAAAAAAAJAAAAAAAAAA=</HashCode>
+      <FileName>FileUpDown\Download.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.FileUpDown.FilePath" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileUpDown\Download.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.FileUpDown.FileTransfer" Collapsed="true">
+    <Position X="2.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAACBAACIgABEICAAAgAAAAAAAAFAAKoAQhIAAAAA=</HashCode>
+      <FileName>FileUpDown\FileTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.FileUpDown.FolderDownload" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAACAgAAIAAAABgAAAAAAAAAAAIAAAAQAAAAA=</HashCode>
+      <FileName>FileUpDown\FolderDownload.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.FileUpDown.FileUpload" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAADIgAAAAAAQCgAEAAAAAAAAAIAAAIAEAAAA=</HashCode>
+      <FileName>FileUpDown\Upload.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.FileUpDown.UpLoadUrl" Collapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAQAAAAAAAAACAAAAQAAIAEAAAgAaAAAAAAA=</HashCode>
+      <FileName>FileUpDown\UpLoadUrl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.Folder.DropBoxFolder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAIAAAIAAAAAQAAAAAABBAAAIAhABAA=</HashCode>
+      <FileName>Folder\DropBoxFolder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="googlecloud1.Folder.GoogleFolder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAQAIAAAIAAAAAAAAAAAAABAAAIAhABAA=</HashCode>
+      <FileName>Folder\GoogleFolder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="googlecloud1.Folder.OneDriveFolder" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAIAAAIAAAAAAAAAAAABAAAAoAhABAA=</HashCode>
+      <FileName>Folder\OneDriveFolder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="googlecloud1.login.Authentication" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUAACQAAgoAAAEoAABiAAIAIAAAAAAAoAAAIBEgAAA=</HashCode>
+      <FileName>login\Authentication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.login.FileDataStore" Collapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAACAAQAIAAAACIIAAAAAAAAAAAAIAEAAIA=</HashCode>
+      <FileName>login\FileDataStore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.login.WebAuthorization" Collapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>login\GoogleWebAuthorizationBroker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.login.QueryStringBuilder" Collapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBIAAAAAAAAEgAAECAAABAAAAAAAAIAAAAAAAADAAAA=</HashCode>
+      <FileName>login\GoogleWebAuthorizationBroker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.login.loginform" Collapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EABgAAQCAAAgEAQIAAABAAQCIAIAAQAAAEEMAEAAACA=</HashCode>
+      <FileName>login\loginform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.Properties.Resources" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAEAmMLBAAwIiAAFAgDcQsAAQWIIgAOAuwICgCDAoA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.Properties.Settings" Collapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.UriCollect.Client" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAgAAAAAAEAAAAAAAAAAACAAAQAAAAQAAAAAAAA=</HashCode>
+      <FileName>UriCollect\Client.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.UriCollect.ScopeCollect" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAAEAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>UriCollect\ScopeCollect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="googlecloud1.UriCollect.UriCollection" Collapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQCAAAAECAAAAACACAACAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>UriCollect\UriCollect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="googlecloud1.SHFILEINFO" Collapsed="true">
+    <Position X="9.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAEAAAAAAAAAAQAAAAAAAAAAAAAAAIAAAAQAA=</HashCode>
+      <FileName>FileIcon.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="googlecloud1.Move" Collapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAgAAA=</HashCode>
+      <FileName>main.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="googlecloud1.Files.CloudFiles" Collapsed="true">
+    <Position X="9.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEBAAAAAAAEAAAQAAAAAAQAAAIAAAA=</HashCode>
+      <FileName>File\File.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="googlecloud1.Folder.AllFolder" Collapsed="true">
+    <Position X="7.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAIAAAAAAAAAAAAAAAAAIAhABAA=</HashCode>
+      <FileName>Folder\AllFolder.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="googlecloud1.NewFileOption" Collapsed="true">
+    <Position X="11" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CreateFolder.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="googlecloud1.FileUpDown.FileOption" Collapsed="true">
+    <Position X="7.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEEIQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileUpDown\FileTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="googlecloud1.login.LoginOption" Collapsed="true">
+    <Position X="9.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEEAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>login\loginform.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="googlecloud1.FileUpDown.StreamComplete" Collapsed="true">
+    <Position X="7.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAUAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>FileUpDown\FileTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="googlecloud1.FileUpDown.StreamProgress" Collapsed="true">
+    <Position X="11" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAQAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>FileUpDown\FileTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="googlecloud1.FileUpDown.StreamControl" Collapsed="true">
+    <Position X="9.25" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>FileUpDown\FileTransfer.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

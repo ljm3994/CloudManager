@@ -1,0 +1,460 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2BCD26D-683D-4228-8B8D-F448DBAC7D28}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>googlecloud1</RootNamespace>
+    <AssemblyName>googlecloud1</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>게시\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Json">
+      <HintPath>..\packages\JSON.1.0.1\lib\net40\Json.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Threading.Tasks.Extensions.Desktop">
+      <HintPath>..\packages\Microsoft.Bcl.Async.1.0.168\lib\net40\Microsoft.Threading.Tasks.Extensions.Desktop.dll</HintPath>
+    </Reference>
+    <Reference Include="MicrosoftAccount.WindowsForms">
+      <HintPath>..\packages\MicrosoftAccount.WindowsForms.1.0.4.0\lib\net45\MicrosoftAccount.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Nemiro.OAuth">
+      <HintPath>..\packages\Nemiro.OAuth.1.10\lib\net45\Nemiro.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.28\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Zlib.Portable">
+      <HintPath>..\packages\Zlib.Portable.1.10.0\lib\portable-net4+sl5+wp8+win8+wpa81+MonoTouch+MonoAndroid\Zlib.Portable.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CloudeSelect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CloudeSelect.Designer.cs">
+      <DependentUpon>CloudeSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateFolder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateFolder.Designer.cs">
+      <DependentUpon>CreateFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DriveInfo.cs" />
+    <Compile Include="DriveInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DriveInfoForm.Designer.cs">
+      <DependentUpon>DriveInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileIcon.cs" />
+    <Compile Include="FileInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileInfo.Designer.cs">
+      <DependentUpon>FileInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileUpDown\FileTransfer.cs" />
+    <Compile Include="FileUpDown\FolderDownload.cs" />
+    <Compile Include="FileUpDown\FolderUpload.cs" />
+    <Compile Include="HttpHelper.cs" />
+    <Compile Include="FileUpDown\UpLoadUrl.cs" />
+    <Compile Include="File\FileInfo.cs" />
+    <Compile Include="LoadFolder.cs" />
+    <Compile Include="LoadTreeNode.cs" />
+    <Compile Include="login\AllLogin.cs" />
+    <Compile Include="login\Authentication.cs" />
+    <Compile Include="FileUpDown\Download.cs" />
+    <Compile Include="FileUpDown\Upload.cs" />
+    <Compile Include="File\DropBoxFile.cs" />
+    <Compile Include="File\File.cs" />
+    <Compile Include="File\GoogleFile.cs" />
+    <Compile Include="File\OneDriveFile.cs" />
+    <Compile Include="Folder\AllFolder.cs" />
+    <Compile Include="Folder\DropBoxFolder.cs" />
+    <Compile Include="Folder\GoogleFolder.cs" />
+    <Compile Include="Folder\OneDriveFolder.cs" />
+    <Compile Include="login\FileDataStore.cs" />
+    <Compile Include="login\GoogleWebAuthorizationBroker.cs" />
+    <Compile Include="login\loginform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerchFile.cs" />
+    <Compile Include="SerchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SerchForm.Designer.cs">
+      <DependentUpon>SerchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.cs">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UriCollect\Client.cs" />
+    <Compile Include="UriCollect\ScopeCollect.cs" />
+    <Compile Include="UriCollect\UriCollect.cs" />
+    <EmbeddedResource Include="CloudeSelect.resx">
+      <DependentUpon>CloudeSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateFolder.resx">
+      <DependentUpon>CreateFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DriveInfoForm.resx">
+      <DependentUpon>DriveInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileInfo.resx">
+      <DependentUpon>FileInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login\loginform.resx" />
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SerchForm.resx">
+      <DependentUpon>SerchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="..\..\..\..\Users\bit-user\Desktop\ClassDiagram1.cd">
+      <Link>ClassDiagram1.cd</Link>
+    </None>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5%28x86 및 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ajax-loader.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loadingimg2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\busy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear-hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-default.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-doc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-docx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-ppt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-pptx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-txt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-xls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-xlsx.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfolder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\untrash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uploading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-multi-size.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_Closed_Icon_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186074_pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186164_trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186171_save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186177_down_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186185_gear_wheel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186257_gnome-dev-disc-cdrw.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186290_gdm-xnest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186389_pc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186415_photos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186457_box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186516_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186520_12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186523_14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186533_11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-2-multi-size.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-3-multi-size %281%29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-3-multi-size %281%291.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-2-32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\upload-3-32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-2-32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dropbox.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\google.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OneDrive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rename-32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-32.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1439186185_gear_wheel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Folder_Closed_Icon_2561.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
+  <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=317567." HelpKeyword="BCLBUILD2001" />
+    <Error Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" Text="The build restored NuGet packages. Build the project again to include these packages in the build. For more information, see http://go.microsoft.com/fwlink/?LinkID=317568." HelpKeyword="BCLBUILD2002" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
